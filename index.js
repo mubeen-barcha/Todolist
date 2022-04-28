@@ -132,3 +132,41 @@ ui.showAlert('book removed','success')
 // =>
 
 // 4.Polymorphism : Refactor ugly switch/case statement
+
+// function Junior (name,age){
+//   if(!new.target) {
+//     return new Junior(name,age)
+//   }
+//   this.name = name;
+//   this.age = age
+//   this.salary = 120000;
+//   this.permission ={
+//     admin:false,
+//     mainHall:false,
+//     meetings:false
+//   }
+// }
+
+// const naveed  =  Junior('naveed',22);
+// const ansar  =  Junior('ansar',92);
+
+
+class Junoir {
+  constructor(name,age){
+    this.name = name;
+    this.age = age
+    this.salary = 120000;
+    this.permission ={
+      admin:false,
+      mainHall:false,
+      meetings:false
+    }
+  }
+}
+const naveed  =  new Junoir('naveed',22);
+
+console.log(naveed)
+
+
+
+
